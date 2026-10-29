@@ -1,0 +1,297 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Nubank",
+ "url": "https://nubank.com.br/",
+ "url_final": "https://nubank.com.br/",
+ "nota": 601,
+ "faixa": "Em construção",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 74.3,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 49.2,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 75.4,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 38.9,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 54.0,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 64.3,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 48.1,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 73.1,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 68.6,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 69.3,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    100.0,
+    8
+   ],
+   "identidade": [
+    39.4,
+    8
+   ],
+   "nap": [
+    61.5,
+    7
+   ],
+   "tipo_schema": [
+    70.7,
+    6
+   ],
+   "grafo": [
+    25.6,
+    6
+   ],
+   "schema_texto": [
+    50.0,
+    6
+   ],
+   "autoridade": [
+    null,
+    7
+   ],
+   "citabilidade": [
+    67.0,
+    8
+   ],
+   "dados": [
+    7.2,
+    7
+   ],
+   "perguntas": [
+    66.7,
+    7
+   ],
+   "eeat": [
+    26.5,
+    7
+   ],
+   "llms_sitemap": [
+    40.0,
+    6
+   ],
+   "base_tecnica": [
+    82.0,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    68.6,
+    5
+   ]
+  },
+  "politicas": 75.4,
+  "links": 48.1,
+  "converta": 64.2,
+  "slugs": 69.3,
+  "transparencia": 60.0,
+  "paa": 64.3
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 25,
+   "ok": true,
+   "evidencia": {
+    "url": "https://nubank.com.br/nu/emprestimos/",
+    "trecho": "total a pagar igual a R$ 9.572,36 com uma taxa de juros de 3,30% ao mês (47,71% ao ano) e Custo Efetivo Total (CET) de 48,23% ao an"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://nubank.com.br/nu/emprestimos/",
+    "trecho": ",36 com uma taxa de juros de 3,30% ao mês (47,71% ao ano) e Custo Efetivo Total (CET) de 48,23% ao ano. Consignado SIAPE: as taxas de juros"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript."
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 15,
+   "ok": true,
+   "evidencia": {
+    "url": "https://nubank.com.br/perguntas",
+    "trecho": "xinhas e investimentos exclusivos que podem render acima de 100% do CDI; ChatGPT : você pode ter mais 6 meses de benefício, desde q"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 64.3,
+  "comuns": {
+   "comuns": 7,
+   "cobertas": 3,
+   "parciais": 3,
+   "ausentes": 1
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1629,
+   "lacunas": 1144,
+   "lacunas_abertas": 688,
+   "lacunas_parciais": 456,
+   "alta": 1,
+   "cobertas": 80,
+   "exclusivas_marca": 405,
+   "termos_ausentes": 2,
+   "temas_sem_marca": 17,
+   "por_concorrente": {
+    "agibank.com.br": 113,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 121,
+    "banco.bradesco": 70,
+    "novo.brb.com.br": 37,
+    "bancobs2.com.br": 44,
+    "cora.com.br": 98,
+    "inter.co": 11,
+    "mercadopago.com.br": 118,
+    "neon.com.br": 524,
+    "pagbank.com.br": 16,
+    "picpay.com": 2,
+    "safra.com.br": 43,
+    "sicoob.com.br": 5
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Quanto tempo dura o benefício?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Identidade da entidade",
+   "correcao": "Use o mesmo nome da marca no <title>, no og:site_name e no name do JSON-LD.",
+   "fonte": "SCHEMA AUDIT"
+  },
+  {
+   "dimensao": "llms.txt e sitemap",
+   "correcao": "Publique /llms.txt com título, resumo e links reais (e /llms-full.txt com o texto das páginas).",
+   "fonte": "AI-DISCOVERABILITY"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Mostre o telefone com DDD em texto no rodapé, com link tel:.",
+   "fonte": "FOOTER"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

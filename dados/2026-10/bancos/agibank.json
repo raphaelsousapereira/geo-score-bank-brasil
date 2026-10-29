@@ -1,0 +1,306 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Agibank",
+ "url": "https://www.agibank.com.br/",
+ "url_final": "https://agibank.com.br/",
+ "nota": 510,
+ "faixa": "Em construção",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 65.7,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 48.2,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 62.0,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 34.4,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 59.1,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 19.2,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 31.9,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 56.9,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 88.5,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 62.0,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    100.0,
+    8
+   ],
+   "identidade": [
+    75.2,
+    8
+   ],
+   "nap": [
+    100.0,
+    7
+   ],
+   "tipo_schema": [
+    0.0,
+    6
+   ],
+   "grafo": [
+    0.0,
+    6
+   ],
+   "schema_texto": [
+    null,
+    6
+   ],
+   "autoridade": [
+    null,
+    7
+   ],
+   "citabilidade": [
+    50.8,
+    8
+   ],
+   "dados": [
+    18.6,
+    7
+   ],
+   "perguntas": [
+    63.3,
+    7
+   ],
+   "eeat": [
+    64.3,
+    7
+   ],
+   "llms_sitemap": [
+    20.0,
+    6
+   ],
+   "base_tecnica": [
+    76.1,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    88.5,
+    5
+   ]
+  },
+  "politicas": 62.0,
+  "links": 31.9,
+  "converta": 37.8,
+  "slugs": 62.0,
+  "transparencia": 45.0,
+  "paa": 19.2
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 25,
+   "ok": true,
+   "evidencia": {
+    "url": "https://agibank.com.br/santos-fc/",
+    "trecho": "ir conta grátis Crédito do Trabalhador​ ✓ Taxas a partir de 1,99%a.m. ✓ Condições exclusivas pra quem é CLT ✓ Desconto em folha,"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://static.agibank.com.br/web_public/agi-ui/docs/tabela-tarifas.pdf",
+    "trecho": "HTTP 200"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data."
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 19.2,
+  "comuns": {
+   "comuns": 13,
+   "cobertas": 0,
+   "parciais": 5,
+   "ausentes": 8
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1624,
+   "lacunas": 1510,
+   "lacunas_abertas": 1311,
+   "lacunas_parciais": 199,
+   "alta": 8,
+   "cobertas": 8,
+   "exclusivas_marca": 106,
+   "termos_ausentes": 15,
+   "temas_sem_marca": 74,
+   "por_concorrente": {
+    "bnb.gov.br": 0,
+    "banestes.com.br": 124,
+    "banco.bradesco": 74,
+    "novo.brb.com.br": 37,
+    "bancobs2.com.br": 44,
+    "cora.com.br": 105,
+    "inter.co": 13,
+    "mercadopago.com.br": 122,
+    "neon.com.br": 566,
+    "nubank.com.br": 491,
+    "pagbank.com.br": 19,
+    "picpay.com": 2,
+    "safra.com.br": 46,
+    "sicoob.com.br": 5
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Como cancelar o cartão?",
+   "Quero negociar minha dívida. O que faço?",
+   "Como ativar meu cartão de crédito?",
+   "Como consigo meu cartão de débito?",
+   "Como realizar um pagamento no aplicativo Cora?",
+   "Limite Pix",
+   "Qual a diferença entre uma conta-corrente e uma conta-poupança?",
+   "Quem pode investir em CDB?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "llms.txt e sitemap",
+   "correcao": "Publique /llms.txt com título, resumo e links reais (e /llms-full.txt com o texto das páginas).",
+   "fonte": "AI-DISCOVERABILITY"
+  },
+  {
+   "dimensao": "Grafo de entidades (@id)",
+   "correcao": "Corrija sintaxe, tipos e propriedades fora do schema.org.",
+   "fonte": "SCHEMA AUDIT"
+  },
+  {
+   "dimensao": "Identidade da entidade",
+   "correcao": "Publique os quatro campos Open Graph.",
+   "fonte": "AGENTIC"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

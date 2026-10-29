@@ -1,0 +1,151 @@
+{
+ "ranking": [
+  {
+   "posicao": 1,
+   "banco": "Mercado Pago",
+   "nota": 677,
+   "faixa": "Forte",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 1
+  },
+  {
+   "posicao": 2,
+   "banco": "Cora",
+   "nota": 670,
+   "faixa": "Forte",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 2
+  },
+  {
+   "posicao": 3,
+   "banco": "Safra",
+   "nota": 659,
+   "faixa": "Forte",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 3
+  },
+  {
+   "posicao": 4,
+   "banco": "Neon",
+   "nota": 615,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 4
+  },
+  {
+   "posicao": 5,
+   "banco": "PagBank",
+   "nota": 604,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 6
+  },
+  {
+   "posicao": 6,
+   "banco": "Nubank",
+   "nota": 601,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 5
+  },
+  {
+   "posicao": 7,
+   "banco": "BRB",
+   "nota": 532,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 7
+  },
+  {
+   "posicao": 8,
+   "banco": "BS2",
+   "nota": 532,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 8
+  },
+  {
+   "posicao": 9,
+   "banco": "Sicoob",
+   "nota": 520,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 9
+  },
+  {
+   "posicao": 10,
+   "banco": "Agibank",
+   "nota": 510,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 11
+  },
+  {
+   "posicao": 11,
+   "banco": "Bradesco",
+   "nota": 499,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 14
+  },
+  {
+   "posicao": 12,
+   "banco": "Banco do Nordeste",
+   "nota": 496,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 13
+  },
+  {
+   "posicao": 13,
+   "banco": "PicPay",
+   "nota": 492,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 10
+  },
+  {
+   "posicao": 14,
+   "banco": "Banestes",
+   "nota": 485,
+   "faixa": "Em construção",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 12
+  },
+  {
+   "posicao": 15,
+   "banco": "Inter",
+   "nota": 442,
+   "faixa": "Fraca",
+   "cobertura_pct": 100,
+   "posicao_pesos_iguais": 15
+  }
+ ],
+ "inversoes_pesos_iguais": [
+  "PagBank × Nubank",
+  "Agibank × PicPay",
+  "Bradesco × Banco do Nordeste",
+  "Bradesco × PicPay",
+  "Bradesco × Banestes",
+  "Banco do Nordeste × PicPay",
+  "Banco do Nordeste × Banestes"
+ ],
+ "fora_do_ranking": [],
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "data": "2026-10-29",
+ "pesos": {
+  "acesso": 10,
+  "identidade": 12,
+  "conformidade": 12,
+  "transparencia": 14,
+  "respostas": 12,
+  "perguntas_setor": 10,
+  "links": 8,
+  "agentes": 8,
+  "visual": 6,
+  "maturidade": 8
+ },
+ "cobertura_minima": 70
+}

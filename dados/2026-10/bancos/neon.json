@@ -1,0 +1,295 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Neon",
+ "url": "https://neon.com.br/",
+ "url_final": "https://neon.com.br/",
+ "nota": 615,
+ "faixa": "Em construção",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 63.5,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 45.2,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 65.4,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 53.5,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 42.0,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 83.3,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 65.7,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 75.8,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 60.4,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 75.4,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [
+  "2 de 4 páginas auditadas estão com noindex: buscadores e IAs que consultam a busca não as mostram (meta robots: noindex). A nota mede a prontidão do conteúdo, que só vira citação depois que o noindex sair."
+ ],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    81.2,
+    8
+   ],
+   "identidade": [
+    98.7,
+    8
+   ],
+   "nap": [
+    61.5,
+    7
+   ],
+   "tipo_schema": [
+    0.0,
+    6
+   ],
+   "grafo": [
+    0.0,
+    6
+   ],
+   "schema_texto": [
+    null,
+    6
+   ],
+   "autoridade": [
+    null,
+    7
+   ],
+   "citabilidade": [
+    54.8,
+    8
+   ],
+   "dados": [
+    13.7,
+    7
+   ],
+   "perguntas": [
+    40.0,
+    7
+   ],
+   "eeat": [
+    29.5,
+    7
+   ],
+   "llms_sitemap": [
+    40.0,
+    6
+   ],
+   "base_tecnica": [
+    87.1,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    60.4,
+    5
+   ]
+  },
+  "politicas": 65.4,
+  "links": 65.7,
+  "converta": 64.6,
+  "slugs": 75.4,
+  "transparencia": 80.0,
+  "paa": 83.3
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 25,
+   "ok": true,
+   "evidencia": {
+    "url": "https://neon.com.br/conheca-a-neon/",
+    "trecho": "como instituição de pagamento; Número de transações cresce 178% ao ano. 2022 Neon anuncia aquisição da Biorc; Neon capta R$ 1,6 bi"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://neon.com.br/perguntas",
+    "trecho": "valores na tela “Custos detalhados” do empréstimo? O que é CET no Empréstimo? Como renegociar o meu Empréstimo? Por que nã"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://site.neon.com.br/tarifas",
+    "trecho": "HTTP 200"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 15,
+   "ok": true,
+   "evidencia": {
+    "url": "https://neon.com.br/",
+    "trecho": "ro, pois o CDB Neon tem o melhor rendimento do mercado: até 113% do CDI (muito mais do que a poupança). E mais: nosso CDB é seguro"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 83.3,
+  "comuns": {
+   "comuns": 6,
+   "cobertas": 4,
+   "parciais": 2,
+   "ausentes": 0
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1623,
+   "lacunas": 1060,
+   "lacunas_abertas": 795,
+   "lacunas_parciais": 265,
+   "alta": 0,
+   "cobertas": 98,
+   "exclusivas_marca": 465,
+   "termos_ausentes": 8,
+   "temas_sem_marca": 18,
+   "por_concorrente": {
+    "agibank.com.br": 112,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 117,
+    "banco.bradesco": 64,
+    "novo.brb.com.br": 35,
+    "bancobs2.com.br": 44,
+    "cora.com.br": 92,
+    "inter.co": 13,
+    "mercadopago.com.br": 120,
+    "nubank.com.br": 435,
+    "pagbank.com.br": 15,
+    "picpay.com": 2,
+    "safra.com.br": 39,
+    "sicoob.com.br": 4
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": []
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "llms.txt e sitemap",
+   "correcao": "Publique /llms.txt com título, resumo e links reais (e /llms-full.txt com o texto das páginas).",
+   "fonte": "AI-DISCOVERABILITY"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Mostre o telefone com DDD em texto no rodapé, com link tel:.",
+   "fonte": "FOOTER"
+  },
+  {
+   "dimensao": "Grafo de entidades (@id)",
+   "correcao": "Corrija sintaxe, tipos e propriedades fora do schema.org.",
+   "fonte": "SCHEMA AUDIT"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

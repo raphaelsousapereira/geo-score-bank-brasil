@@ -1,0 +1,307 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "PicPay",
+ "url": "https://picpay.com/",
+ "url_final": "https://picpay.com/pt-br/pj",
+ "nota": 492,
+ "faixa": "Em construção",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 88.0,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 61.0,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 44.6,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 11.6,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 35.7,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 13.3,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 73.0,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 52.6,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 87.1,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 64.8,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [
+  "A home pedida (https://picpay.com/) redirecionou o robô para https://picpay.com/pt-br/pj: a auditoria mede essa página. Se o redirecionamento depende de idioma ou país, robôs de IA de fora do Brasil também caem nela."
+ ],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    100.0,
+    8
+   ],
+   "identidade": [
+    53.5,
+    8
+   ],
+   "nap": [
+    0.0,
+    7
+   ],
+   "tipo_schema": [
+    84.8,
+    6
+   ],
+   "grafo": [
+    100.0,
+    6
+   ],
+   "schema_texto": [
+    59.4,
+    6
+   ],
+   "autoridade": [
+    78.0,
+    7
+   ],
+   "citabilidade": [
+    45.0,
+    8
+   ],
+   "dados": [
+    6.5,
+    7
+   ],
+   "perguntas": [
+    53.3,
+    7
+   ],
+   "eeat": [
+    7.4,
+    7
+   ],
+   "llms_sitemap": [
+    72.0,
+    6
+   ],
+   "base_tecnica": [
+    87.6,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    87.1,
+    5
+   ]
+  },
+  "politicas": 44.6,
+  "links": 73.0,
+  "converta": 17.7,
+  "slugs": 64.8,
+  "transparencia": 15.0,
+  "paa": 13.3
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela."
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript."
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 15,
+   "ok": true,
+   "evidencia": {
+    "url": "https://picpay.com/",
+    "trecho": "ua empresa rende mais Faça o dinheiro da sua empresa render 102% do CDI todo dia útil. Comece a guardar false center piggy Organize"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 13.3,
+  "comuns": {
+   "comuns": 15,
+   "cobertas": 0,
+   "parciais": 4,
+   "ausentes": 11
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1624,
+   "lacunas": 1622,
+   "lacunas_abertas": 1570,
+   "lacunas_parciais": 52,
+   "alta": 11,
+   "cobertas": 0,
+   "exclusivas_marca": 2,
+   "termos_ausentes": 56,
+   "temas_sem_marca": 98,
+   "por_concorrente": {
+    "agibank.com.br": 114,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 125,
+    "banco.bradesco": 74,
+    "novo.brb.com.br": 37,
+    "bancobs2.com.br": 45,
+    "cora.com.br": 108,
+    "inter.co": 13,
+    "mercadopago.com.br": 123,
+    "neon.com.br": 569,
+    "nubank.com.br": 492,
+    "pagbank.com.br": 19,
+    "safra.com.br": 46,
+    "sicoob.com.br": 5
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Como cancelar o cartão?",
+   "Quero negociar minha dívida. O que faço?",
+   "Como ativar meu cartão de crédito?",
+   "Como consigo meu cartão de débito?",
+   "Como faço para contratar?",
+   "Como realizar um pagamento no aplicativo Cora?",
+   "Limite Pix",
+   "O que cobre o seguro de um celular?",
+   "Qual a diferença entre uma conta-corrente e uma conta-poupança?",
+   "Quanto tempo dura o benefício?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Publique logradouro, número, bairro, cidade e CEP no rodapé.",
+   "fonte": "FOOTER"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Mostre o telefone com DDD em texto no rodapé, com link tel:.",
+   "fonte": "FOOTER"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

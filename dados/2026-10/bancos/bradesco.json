@@ -1,0 +1,298 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Bradesco",
+ "url": "https://banco.bradesco/html/classic/index.shtm",
+ "url_final": "https://banco.bradesco/html/classic/index.shtm",
+ "nota": 499,
+ "faixa": "Em construção",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 68.6,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 21.4,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 53.4,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 40.4,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 40.4,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 50.0,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 61.2,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 61.8,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 49.2,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 72.2,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    75.0,
+    8
+   ],
+   "identidade": [
+    72.1,
+    8
+   ],
+   "nap": [
+    0.0,
+    7
+   ],
+   "tipo_schema": [
+    0.0,
+    6
+   ],
+   "grafo": [
+    0.0,
+    6
+   ],
+   "schema_texto": [
+    null,
+    6
+   ],
+   "autoridade": [
+    null,
+    7
+   ],
+   "citabilidade": [
+    54.1,
+    8
+   ],
+   "dados": [
+    10.9,
+    7
+   ],
+   "perguntas": [
+    65.0,
+    7
+   ],
+   "eeat": [
+    0.0,
+    7
+   ],
+   "llms_sitemap": [
+    60.0,
+    6
+   ],
+   "base_tecnica": [
+    72.0,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    49.2,
+    5
+   ]
+  },
+  "politicas": 53.4,
+  "links": 61.2,
+  "converta": 51.5,
+  "slugs": 72.2,
+  "transparencia": 60.0,
+  "paa": 50.0
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 25,
+   "ok": true,
+   "evidencia": {
+    "url": "https://banco.bradesco/html/classic/produtos-servicos/renegociacao-de-dividas/index.shtm",
+    "trecho": "até 60 vezes, com parcela mínima de R$ 50,00 e juros de até 1,99% ao mês. 19. Quais serão as opções de pagamento para a Faixa 1? Os"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript."
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 15,
+   "ok": true,
+   "evidencia": {
+    "url": "https://banco.bradesco/abrasuaconta/index.shtm",
+    "trecho": "quiste o que você deseja! Guarde seu dinheiro e veja render 100% do CDI. Investimentos a partir de R$ 1 Abrir sua conta-corrente pe"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://banco.bradesco/html/principal/index.shtm",
+    "trecho": "bankorcreditunion, financialproduct"
+   },
+   "correcao": ""
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 50.0,
+  "comuns": {
+   "comuns": 14,
+   "cobertas": 2,
+   "parciais": 10,
+   "ausentes": 2
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1624,
+   "lacunas": 1551,
+   "lacunas_abertas": 1244,
+   "lacunas_parciais": 307,
+   "alta": 2,
+   "cobertas": 15,
+   "exclusivas_marca": 58,
+   "termos_ausentes": 6,
+   "temas_sem_marca": 68,
+   "por_concorrente": {
+    "agibank.com.br": 114,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 123,
+    "novo.brb.com.br": 36,
+    "bancobs2.com.br": 45,
+    "cora.com.br": 108,
+    "inter.co": 13,
+    "mercadopago.com.br": 123,
+    "neon.com.br": 560,
+    "nubank.com.br": 487,
+    "pagbank.com.br": 19,
+    "picpay.com": 2,
+    "safra.com.br": 43,
+    "sicoob.com.br": 5
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Quanto tempo dura o benefício?",
+   "Quem pode investir em CDB?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Publique logradouro, número, bairro, cidade e CEP no rodapé.",
+   "fonte": "FOOTER"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Mostre o telefone com DDD em texto no rodapé, com link tel:.",
+   "fonte": "FOOTER"
+  },
+  {
+   "dimensao": "Grafo de entidades (@id)",
+   "correcao": "Corrija sintaxe, tipos e propriedades fora do schema.org.",
+   "fonte": "SCHEMA AUDIT"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

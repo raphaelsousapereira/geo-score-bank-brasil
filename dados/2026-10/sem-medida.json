@@ -1,0 +1,107 @@
+{
+ "edicao": "2026-10",
+ "data_levantamento": "2026-10-29",
+ "robo": "PANDORA-Audit/1.0 (+auditoria tecnica; respeita robots.txt)",
+ "bancos": [
+  {
+   "banco": "BTG Pactual",
+   "site": "https://www.btgpactual.com/",
+   "motivo": "a home não mostra texto sem JavaScript (10 palavras visíveis)"
+  },
+  {
+   "banco": "BV",
+   "site": "https://www.bv.com.br/",
+   "motivo": "a home não respondeu dentro do prazo"
+  },
+  {
+   "banco": "Banco ABC",
+   "site": "https://www.abcbrasil.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Banco Original",
+   "site": "https://www.original.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Banco Pan",
+   "site": "https://www.bancopan.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Banco do Brasil",
+   "site": "https://www.bb.com.br/",
+   "motivo": "a home não mostra texto sem JavaScript (1 palavra visível)"
+  },
+  {
+   "banco": "Banrisul",
+   "site": "https://www.banrisul.com.br/",
+   "motivo": "a home não mostra texto sem JavaScript (1 palavra visível)"
+  },
+  {
+   "banco": "C6 Bank",
+   "site": "https://www.c6bank.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Caixa",
+   "site": "https://www.caixa.gov.br/",
+   "motivo": "a home entrou em redirecionamento em laço para um robô identificado"
+  },
+  {
+   "banco": "Citi Brasil",
+   "site": "https://www.citibank.com.br/",
+   "motivo": "a home não mostra texto sem JavaScript (2 palavras visíveis)"
+  },
+  {
+   "banco": "Daycoval",
+   "site": "https://www.daycoval.com.br/",
+   "motivo": "a home não mostra texto sem JavaScript (56 palavras visíveis)"
+  },
+  {
+   "banco": "Digio",
+   "site": "https://www.digio.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Itaú",
+   "site": "https://www.itau.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Mercantil",
+   "site": "https://www.bancomercantil.com.br/",
+   "motivo": "a home não mostra texto sem JavaScript (0 palavras visíveis)"
+  },
+  {
+   "banco": "Next",
+   "site": "https://next.me/",
+   "motivo": "a home não respondeu dentro do prazo"
+  },
+  {
+   "banco": "Santander",
+   "site": "https://www.santander.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Sicredi",
+   "site": "https://www.sicredi.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Sofisa",
+   "site": "https://www.sofisa.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  },
+  {
+   "banco": "Will Bank",
+   "site": "https://www.willbank.com.br/",
+   "motivo": "excluído da edição: a home não apresenta conteúdo de produto bancário (página institucional com avisos e documentos)"
+  },
+  {
+   "banco": "XP",
+   "site": "https://www.xpi.com.br/",
+   "motivo": "a home respondeu HTTP 403 a um robô identificado"
+  }
+ ]
+}

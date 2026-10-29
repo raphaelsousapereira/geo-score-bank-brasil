@@ -1,0 +1,299 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Cora",
+ "url": "https://www.cora.com.br/",
+ "url_final": "https://www.cora.com.br/",
+ "nota": 670,
+ "faixa": "Forte",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 100.0,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 86.9,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 60.7,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 32.8,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 61.0,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 56.2,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 52.4,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 85.2,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 81.4,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 72.9,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    100.0,
+    8
+   ],
+   "identidade": [
+    89.1,
+    8
+   ],
+   "nap": [
+    100.0,
+    7
+   ],
+   "tipo_schema": [
+    80.4,
+    6
+   ],
+   "grafo": [
+    92.0,
+    6
+   ],
+   "schema_texto": [
+    89.7,
+    6
+   ],
+   "autoridade": [
+    70.0,
+    7
+   ],
+   "citabilidade": [
+    52.7,
+    8
+   ],
+   "dados": [
+    21.9,
+    7
+   ],
+   "perguntas": [
+    80.0,
+    7
+   ],
+   "eeat": [
+    51.5,
+    7
+   ],
+   "llms_sitemap": [
+    100.0,
+    6
+   ],
+   "base_tecnica": [
+    99.3,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    81.4,
+    5
+   ]
+  },
+  "politicas": 60.7,
+  "links": 52.4,
+  "converta": 71.0,
+  "slugs": 72.9,
+  "transparencia": 40.0,
+  "paa": 56.2
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela."
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://www.cora.com.br/tarifas-cora/",
+    "trecho": "HTTP 200"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 0,
+   "ok": false,
+   "evidencia": null,
+   "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data."
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://cora.com.br/conta-pj/",
+    "trecho": "bankaccount"
+   },
+   "correcao": ""
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 56.2,
+  "comuns": {
+   "comuns": 8,
+   "cobertas": 2,
+   "parciais": 5,
+   "ausentes": 1
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1623,
+   "lacunas": 1518,
+   "lacunas_abertas": 1153,
+   "lacunas_parciais": 365,
+   "alta": 1,
+   "cobertas": 27,
+   "exclusivas_marca": 78,
+   "termos_ausentes": 4,
+   "temas_sem_marca": 54,
+   "por_concorrente": {
+    "agibank.com.br": 111,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 123,
+    "banco.bradesco": 73,
+    "novo.brb.com.br": 35,
+    "bancobs2.com.br": 44,
+    "inter.co": 13,
+    "mercadopago.com.br": 123,
+    "neon.com.br": 551,
+    "nubank.com.br": 485,
+    "pagbank.com.br": 19,
+    "picpay.com": 2,
+    "safra.com.br": 44,
+    "sicoob.com.br": 4
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Como cancelar o cartão?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Transparência de produto e tarifas",
+   "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data.",
+   "fonte": "BANK SCORE"
+  },
+  {
+   "dimensao": "Dados citáveis",
+   "correcao": "Feche a página com uma seção \"Referências\": cada fonte com autor, título, ano e link.",
+   "fonte": "DADOS"
+  },
+  {
+   "dimensao": "Respostas citáveis",
+   "correcao": "Publique um bloco \"Fatos essenciais\" com 3 a 8 fatos curtos (quem, onde, desde quando, o que faz), com datas.",
+   "fonte": "CAPSULE"
+  },
+  {
+   "dimensao": "E-E-A-T",
+   "correcao": "Mostre no rodapé desde quando a empresa atua e o horário de atendimento.",
+   "fonte": "FOOTER"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

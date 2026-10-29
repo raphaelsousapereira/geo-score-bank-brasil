@@ -1,0 +1,298 @@
+{
+ "schema": "pandora-bank-score/1",
+ "engine": "PANDORA BANK SCORE Ω",
+ "version": "1.0.0",
+ "banco": "Safra",
+ "url": "https://www.safra.com.br/",
+ "url_final": "https://www.safra.com.br/",
+ "nota": 659,
+ "faixa": "Forte",
+ "cobertura_pct": 100,
+ "no_ranking": true,
+ "motivo": null,
+ "dimensoes": [
+  {
+   "id": "acesso",
+   "rotulo": "Acesso e indexação por IA",
+   "peso": 10,
+   "nota": 91.4,
+   "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+   "medido": true
+  },
+  {
+   "id": "identidade",
+   "rotulo": "Identidade da instituição",
+   "peso": 12,
+   "nota": 72.0,
+   "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+   "medido": true
+  },
+  {
+   "id": "conformidade",
+   "rotulo": "Conformidade regulatória",
+   "peso": 12,
+   "nota": 68.6,
+   "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+   "medido": true
+  },
+  {
+   "id": "transparencia",
+   "rotulo": "Transparência de produto e tarifas",
+   "peso": 14,
+   "nota": 65.2,
+   "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+   "medido": true
+  },
+  {
+   "id": "respostas",
+   "rotulo": "Respostas citáveis",
+   "peso": 12,
+   "nota": 55.6,
+   "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+   "medido": true
+  },
+  {
+   "id": "perguntas_setor",
+   "rotulo": "Perguntas do setor",
+   "peso": 10,
+   "nota": 29.2,
+   "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+   "medido": true
+  },
+  {
+   "id": "links",
+   "rotulo": "Arquitetura de links",
+   "peso": 8,
+   "nota": 57.0,
+   "fonte": "PANDORA LINKS SITE",
+   "medido": true
+  },
+  {
+   "id": "agentes",
+   "rotulo": "Prontidão para agentes",
+   "peso": 8,
+   "nota": 81.3,
+   "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+   "medido": true
+  },
+  {
+   "id": "visual",
+   "rotulo": "Padrão visual e acessibilidade",
+   "peso": 6,
+   "nota": 65.8,
+   "fonte": "PANDORA PADRÃO (navegador)",
+   "medido": true
+  },
+  {
+   "id": "maturidade",
+   "rotulo": "Maturidade institucional",
+   "peso": 8,
+   "nota": 77.4,
+   "fonte": "PANDORA SLUGS",
+   "medido": true
+  }
+ ],
+ "alertas": [],
+ "partes": {
+  "geo_dims": {
+   "acesso_ia": [
+    100.0,
+    8
+   ],
+   "identidade": [
+    93.5,
+    8
+   ],
+   "nap": [
+    75.0,
+    7
+   ],
+   "tipo_schema": [
+    97.5,
+    6
+   ],
+   "grafo": [
+    12.0,
+    6
+   ],
+   "schema_texto": [
+    90.3,
+    6
+   ],
+   "autoridade": [
+    58.3,
+    7
+   ],
+   "citabilidade": [
+    49.3,
+    8
+   ],
+   "dados": [
+    12.9,
+    7
+   ],
+   "perguntas": [
+    84.5,
+    7
+   ],
+   "eeat": [
+    33.8,
+    7
+   ],
+   "llms_sitemap": [
+    80.0,
+    6
+   ],
+   "base_tecnica": [
+    100.0,
+    6
+   ],
+   "velocidade": [
+    null,
+    6
+   ],
+   "padrao": [
+    65.8,
+    5
+   ]
+  },
+  "politicas": 68.6,
+  "links": 57.0,
+  "converta": 62.6,
+  "slugs": 77.4,
+  "transparencia": 100.0,
+  "paa": 29.2
+ },
+ "transparencia": [
+  {
+   "id": "taxa",
+   "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+   "max": 25,
+   "pontos": 25,
+   "ok": true,
+   "evidencia": {
+    "url": "https://safra.com.br/investimentos/fundos-de-investimentos/cybersecurity/",
+    "trecho": "ão tem aumentado de forma constante, o setor cresce mais de 20% aa desde 2020; • As empresas do setor têm receita recorrente,"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cet",
+   "verificacao": "CET (custo efetivo total) mencionado",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://safra.com.br/servicos/pessoa-fisica/credito.htm",
+    "trecho": "édito com Garantia de Imóvel (sujeito a avaliação). O que é Custo Efetivo Total (CET) de uma operação? Custo Efetivo Total (CET) é a taxa q"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "tarifas",
+   "verificacao": "página de tarifas ligada da home e aberta",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://www.safra.com.br/external-files/servicos/pessoa-fisica/conta-corrente/tabela-de-tarifas-pf.pdf",
+    "trecho": "HTTP 200"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "cdi",
+   "verificacao": "rendimento em % do CDI no texto",
+   "max": 15,
+   "pontos": 15,
+   "ok": true,
+   "evidencia": {
+    "url": "https://safra.com.br/app-safra.htm",
+    "trecho": "lido Abra sua conta EXCLUSIVO PARA NOVOS CLIENTES CDB Safra 110% do CDI Invista em um CDB com a credibilidade do Safra. Conheça a o"
+   },
+   "correcao": ""
+  },
+  {
+   "id": "schema",
+   "verificacao": "produto financeiro marcado no JSON-LD",
+   "max": 20,
+   "pontos": 20,
+   "ok": true,
+   "evidencia": {
+    "url": "https://safra.com.br/investimentos/fundos-de-investimentos/cybersecurity/",
+    "trecho": "propriedades de taxa/tarifa"
+   },
+   "correcao": ""
+  }
+ ],
+ "perguntas_setor": {
+  "nota": 29.2,
+  "comuns": {
+   "comuns": 12,
+   "cobertas": 1,
+   "parciais": 5,
+   "ausentes": 6
+  },
+  "minimo_bancos": 3,
+  "resumo": {
+   "sites": 15,
+   "sites_lidos": 15,
+   "concorrentes_lidos": 14,
+   "paginas": 375,
+   "perguntas": 2185,
+   "grupos": 1620,
+   "lacunas": 1576,
+   "lacunas_abertas": 1380,
+   "lacunas_parciais": 196,
+   "alta": 6,
+   "cobertas": 10,
+   "exclusivas_marca": 34,
+   "termos_ausentes": 16,
+   "temas_sem_marca": 76,
+   "por_concorrente": {
+    "agibank.com.br": 114,
+    "bnb.gov.br": 0,
+    "banestes.com.br": 125,
+    "banco.bradesco": 71,
+    "novo.brb.com.br": 37,
+    "bancobs2.com.br": 45,
+    "cora.com.br": 106,
+    "inter.co": 13,
+    "mercadopago.com.br": 123,
+    "neon.com.br": 561,
+    "nubank.com.br": 488,
+    "pagbank.com.br": 18,
+    "picpay.com": 2,
+    "sicoob.com.br": 5
+   }
+  },
+  "status": "ok",
+  "lacunas_comuns": [
+   "Como faço para abrir uma Conta Salário?",
+   "Como realizar um pagamento no aplicativo Cora?",
+   "Limite Pix",
+   "O que cobre o seguro de um celular?",
+   "Qual a diferença entre uma conta-corrente e uma conta-poupança?",
+   "Quanto tempo dura o benefício?"
+  ]
+ },
+ "prioridades": [
+  {
+   "dimensao": "Grafo de entidades (@id)",
+   "correcao": "Dê @id a cada entidade e ligue WebPage → about/publisher → Organization por @id.",
+   "fonte": "SCHEMA AUDIT"
+  },
+  {
+   "dimensao": "Contato consistente (NAP)",
+   "correcao": "Publique logradouro, número, bairro, cidade e CEP no rodapé.",
+   "fonte": "FOOTER"
+  },
+  {
+   "dimensao": "Grafo de entidades (@id)",
+   "correcao": "Corrija sintaxe, tipos e propriedades fora do schema.org.",
+   "fonte": "SCHEMA AUDIT"
+  }
+ ],
+ "erros_motores": {},
+ "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Pesos são hipótese de projeto."
+}

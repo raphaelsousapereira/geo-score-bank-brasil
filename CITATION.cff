@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Se usar estes dados, cite assim."
+title: "GEO Score Bank Brasil"
+type: dataset
+authors:
+  - family-names: Pereira
+    given-names: Raphael Sousa
+    website: "https://raphaelsousapereira.com.br/"
+version: "2026-10"
+date-released: "2026-10-29"
+license: CC-BY-4.0
+url: "https://raphaelsousapereira.com.br/geo-score-bank-brasil/"
+repository: "https://github.com/raphaelsousapereira/geo-score-bank-brasil"
