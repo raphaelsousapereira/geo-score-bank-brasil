@@ -1,0 +1,17 @@
+posicao,banco,site,nota,faixa,cobertura_pct,acesso,identidade,conformidade,transparencia,respostas,perguntas_setor,links,agentes,visual,maturidade
+1,Cora,https://www.cora.com.br/,682,Forte,100,100,88,61,33,60,56,69,85,79,75
+2,Mercado Pago,https://www.mercadopago.com.br/,678,Forte,100,75,81,59,58,62,39,72,72,100,83
+3,Safra,https://www.safra.com.br/,675,Forte,100,92,73,69,65,55,41,61,81,66,77
+4,Nubank,https://nubank.com.br/,640,Em construção,100,75,49,75,39,56,67,87,73,68,74
+5,Neon,https://neon.com.br/,631,Em construção,100,64,48,65,54,44,83,71,76,63,80
+6,PagBank,https://pagbank.com.br/,612,Em construção,100,75,81,50,55,61,35,58,76,48,73
+7,BRB,https://www.brb.com.br/,547,Em construção,100,75,55,66,6,53,40,76,59,74,79
+8,BS2,https://www.bancobs2.com.br/,545,Em construção,100,75,55,72,17,60,39,54,63,44,76
+9,Agibank,https://www.agibank.com.br/,538,Em construção,100,67,50,62,34,58,18,68,57,86,62
+10,Sicoob,https://www.sicoob.com.br/,534,Em construção,100,61,39,41,53,56,33,72,65,63,71
+11,Banestes,https://www.banestes.com.br/,516,Em construção,100,68,33,48,15,54,50,73,46,100,75
+12,Bradesco,https://banco.bradesco/html/classic/index.shtm,511,Em construção,100,69,24,53,40,42,50,66,62,51,74
+13,PicPay,https://picpay.com/,506,Em construção,100,88,60,45,12,37,20,79,54,90,65
+14,Banco do Nordeste,https://www.bnb.gov.br/,476,Em construção,84,66,50,70,2,57,23,,74,59,
+15,Inter,https://inter.co/,475,Em construção,100,59,37,64,3,44,10,80,64,86,76
+16,Will Bank,https://www.willbank.com.br/,310,Fraca,100,66,35,0,12,51,23,0,64,53,22

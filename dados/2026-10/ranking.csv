@@ -1,0 +1,16 @@
+posicao,banco,site,nota_0_1000,faixa,cobertura_pct,acesso_0_100,identidade_0_100,conformidade_0_100,transparencia_0_100,respostas_0_100,perguntas_setor_0_100,links_0_100,agentes_0_100,visual_0_100,maturidade_0_100
+1,Mercado Pago,https://www.mercadopago.com.br/,677,Forte,100,74.3,80.6,58.8,57.7,62.5,46.2,63.1,72.3,100.0,80.9
+2,Cora,https://www.cora.com.br/,670,Forte,100,100.0,86.9,60.7,32.8,61.0,56.2,52.4,85.2,81.4,72.9
+3,Safra,https://www.safra.com.br/,659,Forte,100,91.4,72.0,68.6,65.2,55.6,29.2,57.0,81.3,65.8,77.4
+4,Neon,https://neon.com.br/,615,Em construção,100,63.5,45.2,65.4,53.5,42.0,83.3,65.7,75.8,60.4,75.4
+5,PagBank,https://pagbank.com.br/,604,Em construção,100,74.3,80.4,50.2,55.4,61.7,35.7,48.2,76.5,46.9,72.8
+6,Nubank,https://nubank.com.br/,601,Em construção,100,74.3,49.2,75.4,38.9,54.0,64.3,48.1,73.1,68.6,69.3
+7,BRB,https://www.brb.com.br/,532,Em construção,100,74.3,54.6,65.9,5.6,53.6,36.7,59.6,59.2,77.7,78.7
+8,BS2,https://www.bancobs2.com.br/,532,Em construção,100,74.3,56.5,72.2,17.4,61.9,30.0,45.9,62.9,45.3,75.8
+9,Sicoob,https://www.sicoob.com.br/,520,Em construção,100,60.7,35.8,40.7,52.6,55.2,26.7,68.9,64.6,64.1,69.6
+10,Agibank,https://www.agibank.com.br/,510,Em construção,100,65.7,48.2,62.0,34.4,59.1,19.2,31.9,56.9,88.5,62.0
+11,Bradesco,https://banco.bradesco/html/classic/index.shtm,499,Em construção,100,68.6,21.4,53.4,40.4,40.4,50.0,61.2,61.8,49.2,72.2
+12,Banco do Nordeste,https://www.bnb.gov.br/,496,Em construção,100,65.7,48.3,70.0,2.0,57.9,20.0,49.3,74.3,55.0,80.5
+13,PicPay,https://picpay.com/,492,Em construção,100,88.0,61.0,44.6,11.6,35.7,13.3,73.0,52.6,87.1,64.8
+14,Banestes,https://www.banestes.com.br/,485,Em construção,100,67.1,31.1,47.7,15.0,54.1,42.3,53.1,45.5,100.0,70.1
+15,Inter,https://inter.co/,442,Fraca,100,58.2,35.9,64.4,3.2,42.9,10.0,46.7,64.2,87.2,70.4

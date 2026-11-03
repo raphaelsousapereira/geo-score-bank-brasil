@@ -1,0 +1,309 @@
+{
+  "schema": "pandora-bank-score/1",
+  "engine": "PANDORA BANK SCORE Ω",
+  "version": "1.0.0",
+  "banco": "BRB",
+  "url": "https://www.brb.com.br/",
+  "url_final": "https://novo.brb.com.br/",
+  "nota": 547,
+  "faixa": "Em construção",
+  "cobertura_pct": 100,
+  "no_ranking": true,
+  "motivo": null,
+  "dimensoes": [
+    {
+      "id": "acesso",
+      "rotulo": "Acesso e indexação por IA",
+      "nota": 75.0,
+      "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+      "medido": true
+    },
+    {
+      "id": "identidade",
+      "rotulo": "Identidade da instituição",
+      "nota": 55.3,
+      "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+      "medido": true
+    },
+    {
+      "id": "conformidade",
+      "rotulo": "Conformidade regulatória",
+      "nota": 65.9,
+      "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+      "medido": true
+    },
+    {
+      "id": "transparencia",
+      "rotulo": "Transparência de produto e tarifas",
+      "nota": 5.6,
+      "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+      "medido": true
+    },
+    {
+      "id": "respostas",
+      "rotulo": "Respostas citáveis",
+      "nota": 53.2,
+      "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+      "medido": true
+    },
+    {
+      "id": "perguntas_setor",
+      "rotulo": "Perguntas do setor",
+      "nota": 40.0,
+      "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+      "medido": true
+    },
+    {
+      "id": "links",
+      "rotulo": "Arquitetura de links",
+      "nota": 75.9,
+      "fonte": "PANDORA LINKS SITE",
+      "medido": true
+    },
+    {
+      "id": "agentes",
+      "rotulo": "Prontidão para agentes",
+      "nota": 59.2,
+      "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+      "medido": true
+    },
+    {
+      "id": "visual",
+      "rotulo": "Padrão visual e acessibilidade",
+      "nota": 73.6,
+      "fonte": "PANDORA PADRÃO (navegador)",
+      "medido": true
+    },
+    {
+      "id": "maturidade",
+      "rotulo": "Maturidade institucional",
+      "nota": 78.7,
+      "fonte": "PANDORA SLUGS",
+      "medido": true
+    }
+  ],
+  "alertas": [
+    "A home pedida (https://www.brb.com.br/) redirecionou o robô para https://novo.brb.com.br/: a auditoria mede essa página. Se o redirecionamento depende de idioma ou país, robôs de IA de fora do Brasil também caem nela."
+  ],
+  "partes": {
+    "geo_dims": {
+      "acesso_ia": [
+        100.0,
+        7
+      ],
+      "porteiro": [
+        null,
+        4
+      ],
+      "identidade": [
+        36.9,
+        8
+      ],
+      "nap": [
+        61.5,
+        6
+      ],
+      "tipo_schema": [
+        96.6,
+        5
+      ],
+      "grafo": [
+        96.4,
+        5
+      ],
+      "schema_texto": [
+        50.0,
+        5
+      ],
+      "autoridade": [
+        0.0,
+        5
+      ],
+      "citabilidade": [
+        50.5,
+        8
+      ],
+      "dados": [
+        14.1,
+        6
+      ],
+      "perguntas": [
+        66.7,
+        5
+      ],
+      "perguntas_setor": [
+        null,
+        3
+      ],
+      "eeat": [
+        44.1,
+        5
+      ],
+      "llms_sitemap": [
+        40.0,
+        5
+      ],
+      "links": [
+        null,
+        3
+      ],
+      "maturidade": [
+        null,
+        3
+      ],
+      "blog": [
+        null,
+        3
+      ],
+      "base_tecnica": [
+        77.3,
+        5
+      ],
+      "velocidade": [
+        null,
+        5
+      ],
+      "padrao": [
+        73.6,
+        4
+      ]
+    },
+    "politicas": 65.9,
+    "links": 75.9,
+    "converta": 41.2,
+    "slugs": 78.7,
+    "transparencia": 0.0,
+    "paa": 40.0
+  },
+  "transparencia": [
+    {
+      "id": "taxa",
+      "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+      "max": 25,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela."
+    },
+    {
+      "id": "cet",
+      "verificacao": "CET (custo efetivo total) mencionado",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+    },
+    {
+      "id": "tarifas",
+      "verificacao": "página de tarifas ligada da home e aberta",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript."
+    },
+    {
+      "id": "cdi",
+      "verificacao": "rendimento em % do CDI no texto",
+      "max": 15,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data."
+    },
+    {
+      "id": "schema",
+      "verificacao": "produto financeiro marcado no JSON-LD",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+    }
+  ],
+  "perguntas_setor": {
+    "nota": 40.0,
+    "comuns": {
+      "comuns": 15,
+      "cobertas": 1,
+      "parciais": 10,
+      "ausentes": 4
+    },
+    "minimo_bancos": 3,
+    "resumo": {
+      "sites": 16,
+      "sites_lidos": 16,
+      "concorrentes_lidos": 15,
+      "paginas": 376,
+      "perguntas": 2187,
+      "grupos": 1629,
+      "lacunas": 1593,
+      "lacunas_abertas": 1380,
+      "lacunas_parciais": 213,
+      "alta": 4,
+      "cobertas": 4,
+      "exclusivas_marca": 32,
+      "termos_ausentes": 15,
+      "temas_sem_marca": 80,
+      "por_concorrente": {
+        "inter.co": 14,
+        "nubank.com.br": 485,
+        "banco.bradesco": 73,
+        "safra.com.br": 44,
+        "bnb.gov.br": 0,
+        "sicoob.com.br": 4,
+        "picpay.com": 2,
+        "mercadopago.com.br": 124,
+        "agibank.com.br": 114,
+        "pagbank.com.br": 19,
+        "neon.com.br": 578,
+        "bancobs2.com.br": 45,
+        "cora.com.br": 108,
+        "banestes.com.br": 125,
+        "willbank.com.br": 0
+      }
+    },
+    "status": "ok",
+    "lacunas_comuns": [
+      "Como abro uma conta?",
+      "Como antecipar parcelas?",
+      "Como recebo transferências internacionais?",
+      "Quem pode investir em CDB?"
+    ]
+  },
+  "prioridades": [
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Publicar as taxas de cada produto de crédito em texto, com o período (ex.: 2,99% a.m.) e a data da tabela.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Identidade da entidade",
+      "correcao": "Use o mesmo nome da marca no <title>, no og:site_name e no name do JSON-LD.",
+      "fonte": "SCHEMA AUDIT"
+    }
+  ],
+  "erros_motores": {},
+  "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Os pesos de cada dimensão são próprios da metodologia e não são publicados."
+}

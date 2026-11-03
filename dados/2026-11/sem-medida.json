@@ -1,0 +1,102 @@
+{
+  "edicao": "2026-11",
+  "data_levantamento": "2026-11-02",
+  "robo": "PANDORA-Audit/1.0 (+auditoria tecnica; respeita robots.txt)",
+  "bancos": [
+    {
+      "banco": "BTG Pactual",
+      "site": "https://www.btgpactual.com/",
+      "motivo": "a home tem 10 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "BV",
+      "site": "https://www.bv.com.br/",
+      "motivo": "a home não abriu para um robô identificado (https://www.bv.com.br/: The read operation timed out)"
+    },
+    {
+      "banco": "Banco ABC",
+      "site": "https://www.abcbrasil.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco Original",
+      "site": "https://www.original.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco Pan",
+      "site": "https://www.bancopan.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "site": "https://www.bb.com.br/",
+      "motivo": "a home tem 1 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Banrisul",
+      "site": "https://www.banrisul.com.br/",
+      "motivo": "a home tem 1 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "C6 Bank",
+      "site": "https://www.c6bank.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Caixa",
+      "site": "https://www.caixa.gov.br/",
+      "motivo": "a home respondeu HTTP 302 a um robô identificado"
+    },
+    {
+      "banco": "Citi Brasil",
+      "site": "https://www.citibank.com.br/",
+      "motivo": "a home tem 2 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Daycoval",
+      "site": "https://www.daycoval.com.br/",
+      "motivo": "a home tem 56 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Digio",
+      "site": "https://www.digio.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Itaú",
+      "site": "https://www.itau.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Mercantil",
+      "site": "https://www.bancomercantil.com.br/",
+      "motivo": "a home tem 0 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Next",
+      "site": "https://next.me/",
+      "motivo": "a home não abriu para um robô identificado (https://next.me/: The read operation timed out)"
+    },
+    {
+      "banco": "Santander",
+      "site": "https://www.santander.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Sicredi",
+      "site": "https://www.sicredi.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Sofisa",
+      "site": "https://www.sofisa.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "XP",
+      "site": "https://www.xpi.com.br/",
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    }
+  ]
+}

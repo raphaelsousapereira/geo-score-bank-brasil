@@ -1,0 +1,260 @@
+{
+  "ranking": [
+    {
+      "posicao": 1,
+      "banco": "Cora",
+      "nota": 682,
+      "faixa": "Forte",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 1
+    },
+    {
+      "posicao": 2,
+      "banco": "Mercado Pago",
+      "nota": 678,
+      "faixa": "Forte",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 2
+    },
+    {
+      "posicao": 3,
+      "banco": "Safra",
+      "nota": 675,
+      "faixa": "Forte",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 3
+    },
+    {
+      "posicao": 4,
+      "banco": "Nubank",
+      "nota": 640,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 4
+    },
+    {
+      "posicao": 5,
+      "banco": "Neon",
+      "nota": 631,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 5
+    },
+    {
+      "posicao": 6,
+      "banco": "PagBank",
+      "nota": 612,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 6
+    },
+    {
+      "posicao": 7,
+      "banco": "BRB",
+      "nota": 547,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 7
+    },
+    {
+      "posicao": 8,
+      "banco": "BS2",
+      "nota": 545,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 10
+    },
+    {
+      "posicao": 9,
+      "banco": "Agibank",
+      "nota": 538,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 8
+    },
+    {
+      "posicao": 10,
+      "banco": "Sicoob",
+      "nota": 534,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 11
+    },
+    {
+      "posicao": 11,
+      "banco": "Banestes",
+      "nota": 516,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 9
+    },
+    {
+      "posicao": 12,
+      "banco": "Bradesco",
+      "nota": 511,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 13
+    },
+    {
+      "posicao": 13,
+      "banco": "PicPay",
+      "nota": 506,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 12
+    },
+    {
+      "posicao": 14,
+      "banco": "Banco do Nordeste",
+      "nota": 476,
+      "faixa": "Em construção",
+      "cobertura_pct": 84,
+      "posicao_pesos_iguais": 15
+    },
+    {
+      "posicao": 15,
+      "banco": "Inter",
+      "nota": 475,
+      "faixa": "Em construção",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 14
+    },
+    {
+      "posicao": 16,
+      "banco": "Will Bank",
+      "nota": 310,
+      "faixa": "Fraca",
+      "cobertura_pct": 100,
+      "posicao_pesos_iguais": 16
+    }
+  ],
+  "inversoes_pesos_iguais": [
+    "BS2 × Agibank",
+    "BS2 × Banestes",
+    "Sicoob × Banestes",
+    "Bradesco × PicPay",
+    "Banco do Nordeste × Inter"
+  ],
+  "fora_do_ranking": [
+    {
+      "banco": "BTG Pactual",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 10 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "BV",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home não abriu para um robô identificado (https://www.bv.com.br/: The read operation timed out)"
+    },
+    {
+      "banco": "Banco ABC",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco Original",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco Pan",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 1 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Banrisul",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 1 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "C6 Bank",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Caixa",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 302 a um robô identificado"
+    },
+    {
+      "banco": "Citi Brasil",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 2 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Daycoval",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 56 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Digio",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Itaú",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Mercantil",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home tem 0 palavras visíveis sem JavaScript: não há conteúdo para auditar"
+    },
+    {
+      "banco": "Next",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home não abriu para um robô identificado (https://next.me/: The read operation timed out)"
+    },
+    {
+      "banco": "Santander",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Sicredi",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "Sofisa",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    },
+    {
+      "banco": "XP",
+      "nota": null,
+      "cobertura_pct": 0,
+      "motivo": "a home respondeu HTTP 403 a um robô identificado"
+    }
+  ],
+  "schema": "pandora-bank-score/1",
+  "engine": "PANDORA BANK SCORE Ω",
+  "version": "1.0.0",
+  "data": "2026-11-02",
+  "cobertura_minima": 70
+}

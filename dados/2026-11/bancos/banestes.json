@@ -1,0 +1,307 @@
+{
+  "schema": "pandora-bank-score/1",
+  "engine": "PANDORA BANK SCORE Ω",
+  "version": "1.0.0",
+  "banco": "Banestes",
+  "url": "https://www.banestes.com.br/",
+  "url_final": "https://www.banestes.com.br/",
+  "nota": 516,
+  "faixa": "Em construção",
+  "cobertura_pct": 100,
+  "no_ranking": true,
+  "motivo": null,
+  "dimensoes": [
+    {
+      "id": "acesso",
+      "rotulo": "Acesso e indexação por IA",
+      "nota": 67.7,
+      "fonte": "GEO SCORE: acesso de robôs de IA, llms.txt e sitemap",
+      "medido": true
+    },
+    {
+      "id": "identidade",
+      "rotulo": "Identidade da instituição",
+      "nota": 33.4,
+      "fonte": "GEO SCORE: identidade, NAP, schema, grafo, schema × texto, sameAs",
+      "medido": true
+    },
+    {
+      "id": "conformidade",
+      "rotulo": "Conformidade regulatória",
+      "nota": 47.7,
+      "fonte": "PANDORA POLÍTICAS (finanças + corporativo)",
+      "medido": true
+    },
+    {
+      "id": "transparencia",
+      "rotulo": "Transparência de produto e tarifas",
+      "nota": 15.0,
+      "fonte": "verificações bancárias 60% + PANDORA DADOS 40%",
+      "medido": true
+    },
+    {
+      "id": "respostas",
+      "rotulo": "Respostas citáveis",
+      "nota": 54.3,
+      "fonte": "GEO SCORE: respostas citáveis, perguntas de LLM, E-E-A-T",
+      "medido": true
+    },
+    {
+      "id": "perguntas_setor",
+      "rotulo": "Perguntas do setor",
+      "nota": 50.0,
+      "fonte": "PANDORA PAA (perguntas dos bancos da rodada)",
+      "medido": true
+    },
+    {
+      "id": "links",
+      "rotulo": "Arquitetura de links",
+      "nota": 72.8,
+      "fonte": "PANDORA LINKS SITE",
+      "medido": true
+    },
+    {
+      "id": "agentes",
+      "rotulo": "Prontidão para agentes",
+      "nota": 45.5,
+      "fonte": "AGENTIC (base técnica) 50% + CONVERTA 360 50%",
+      "medido": true
+    },
+    {
+      "id": "visual",
+      "rotulo": "Padrão visual e acessibilidade",
+      "nota": 100.0,
+      "fonte": "PANDORA PADRÃO (navegador)",
+      "medido": true
+    },
+    {
+      "id": "maturidade",
+      "rotulo": "Maturidade institucional",
+      "nota": 75.3,
+      "fonte": "PANDORA SLUGS",
+      "medido": true
+    }
+  ],
+  "alertas": [],
+  "partes": {
+    "geo_dims": {
+      "acesso_ia": [
+        87.5,
+        7
+      ],
+      "porteiro": [
+        null,
+        4
+      ],
+      "identidade": [
+        71.2,
+        8
+      ],
+      "nap": [
+        38.5,
+        6
+      ],
+      "tipo_schema": [
+        0.0,
+        5
+      ],
+      "grafo": [
+        0.0,
+        5
+      ],
+      "schema_texto": [
+        null,
+        5
+      ],
+      "autoridade": [
+        null,
+        5
+      ],
+      "citabilidade": [
+        55.6,
+        8
+      ],
+      "dados": [
+        0.0,
+        6
+      ],
+      "perguntas": [
+        68.9,
+        5
+      ],
+      "perguntas_setor": [
+        null,
+        3
+      ],
+      "eeat": [
+        37.5,
+        5
+      ],
+      "llms_sitemap": [
+        40.0,
+        5
+      ],
+      "links": [
+        null,
+        3
+      ],
+      "maturidade": [
+        null,
+        3
+      ],
+      "blog": [
+        null,
+        3
+      ],
+      "base_tecnica": [
+        77.3,
+        5
+      ],
+      "velocidade": [
+        null,
+        5
+      ],
+      "padrao": [
+        100.0,
+        4
+      ]
+    },
+    "politicas": 47.7,
+    "links": 72.8,
+    "converta": 13.7,
+    "slugs": 75.3,
+    "transparencia": 25.0,
+    "paa": 50.0
+  },
+  "transparencia": [
+    {
+      "id": "taxa",
+      "verificacao": "taxa de juros com período (% a.m. ou % a.a.) no texto",
+      "max": 25,
+      "pontos": 25,
+      "ok": true,
+      "evidencia": {
+        "url": "https://www.banestes.com.br/institucional/responsabilidade.html",
+        "trecho": "de R$ 50 mil. As taxas de juros são atrativas, a partir de 1,49% ao mês para servidores públicos e 1,79% ao mês para clientes em ge"
+      },
+      "correcao": ""
+    },
+    {
+      "id": "cet",
+      "verificacao": "CET (custo efetivo total) mencionado",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF."
+    },
+    {
+      "id": "tarifas",
+      "verificacao": "página de tarifas ligada da home e aberta",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript."
+    },
+    {
+      "id": "cdi",
+      "verificacao": "rendimento em % do CDI no texto",
+      "max": 15,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data."
+    },
+    {
+      "id": "schema",
+      "verificacao": "produto financeiro marcado no JSON-LD",
+      "max": 20,
+      "pontos": 0,
+      "ok": false,
+      "evidencia": null,
+      "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas."
+    }
+  ],
+  "perguntas_setor": {
+    "nota": 50.0,
+    "comuns": {
+      "comuns": 12,
+      "cobertas": 1,
+      "parciais": 10,
+      "ausentes": 1
+    },
+    "minimo_bancos": 3,
+    "resumo": {
+      "sites": 16,
+      "sites_lidos": 16,
+      "concorrentes_lidos": 15,
+      "paginas": 376,
+      "perguntas": 2188,
+      "grupos": 1632,
+      "lacunas": 1507,
+      "lacunas_abertas": 1260,
+      "lacunas_parciais": 247,
+      "alta": 1,
+      "cobertas": 14,
+      "exclusivas_marca": 111,
+      "termos_ausentes": 8,
+      "temas_sem_marca": 61,
+      "por_concorrente": {
+        "inter.co": 14,
+        "nubank.com.br": 481,
+        "banco.bradesco": 72,
+        "safra.com.br": 44,
+        "bnb.gov.br": 0,
+        "sicoob.com.br": 5,
+        "picpay.com": 2,
+        "mercadopago.com.br": 123,
+        "agibank.com.br": 113,
+        "pagbank.com.br": 19,
+        "neon.com.br": 574,
+        "bancobs2.com.br": 45,
+        "novo.brb.com.br": 37,
+        "cora.com.br": 108,
+        "willbank.com.br": 0
+      }
+    },
+    "status": "ok",
+    "lacunas_comuns": [
+      "Quero negociar minha dívida. O que faço?"
+    ]
+  },
+  "prioridades": [
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Mostrar o CET ao lado de cada taxa de crédito, em texto, não só em simulador ou PDF.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Ligar a tabela de tarifas e pacotes de serviços a partir da home, numa página HTML legível sem JavaScript.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Escrever o rendimento da conta e dos investimentos em % do CDI, em texto, com a data.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "Transparência de produto e tarifas",
+      "correcao": "Marcar os produtos com FinancialProduct/LoanOrCredit/BankAccount, com interestRate ou feesAndCommissionsSpecification apontando para a tabela de tarifas.",
+      "fonte": "BANK SCORE"
+    },
+    {
+      "dimensao": "llms.txt e sitemap",
+      "correcao": "Publique /llms.txt com título, resumo e links reais (e /llms-full.txt com o texto das páginas).",
+      "fonte": "AI-DISCOVERABILITY"
+    },
+    {
+      "dimensao": "Contato consistente (NAP)",
+      "correcao": "Publique logradouro, número, bairro, cidade e CEP no rodapé.",
+      "fonte": "FOOTER"
+    }
+  ],
+  "erros_motores": {},
+  "escopo": "Prontidão do site para citação por IA; não mede presença real nas IAs, saúde financeira nem qualidade do produto. Os pesos de cada dimensão são próprios da metodologia e não são publicados."
+}
