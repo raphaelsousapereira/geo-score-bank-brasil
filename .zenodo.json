@@ -1,0 +1,28 @@
+{
+  "title": "GEO Score Bank Brasil — edição de novembro de 2026",
+  "upload_type": "dataset",
+  "description": "<p>Prontidão dos sites de bancos brasileiros para serem lidos e citados por sistemas de IA generativa (ChatGPT, Gemini, Claude, Perplexity, AI Overviews), numa nota de 0 a 1000 em 10 dimensões. Edição mensal, dados abertos.</p><p>Edição de novembro de 2026, coleta em 02/11/2026: 16 bancos no ranking e 19 sem medida (home bloqueada a robô identificado ou sem texto sem JavaScript). Motor: PANDORA BANK SCORE Ω v1.0.0, determinístico, sem chamada a LLM.</p><p>O índice mede o que o site de cada banco publica e como publica. Não mede presença real nas respostas das IAs, saúde financeira, qualidade do produto nem atendimento. Os pesos das dimensões não são publicados; o ranking também é calculado com pesos iguais e as inversões são divulgadas.</p><p>Arquivos: ranking (CSV, JSON, Markdown), um JSON por banco com dimensões, fontes e evidências, lista de bancos sem medida e a metodologia (METODOLOGIA.md). Inclui também a edição de outubro de 2026 para comparação.</p>",
+  "creators": [
+    {"name": "Pereira, Raphael Sousa", "affiliation": "Negócio no Mapa"}
+  ],
+  "keywords": [
+    "Generative Engine Optimization",
+    "GEO",
+    "AI Search",
+    "bancos",
+    "Brasil",
+    "LLM",
+    "GEO Score",
+    "PANDORA"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "por",
+  "version": "2026-11",
+  "publication_date": "2026-11-02",
+  "related_identifiers": [
+    {"identifier": "https://github.com/raphaelsousapereira/geo-score-bank-brasil", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://raphaelsousapereira.com.br/geo-score-bank-brasil/", "relation": "isDocumentedBy", "scheme": "url"},
+    {"identifier": "10.5281/zenodo.21910615", "relation": "references", "scheme": "doi"}
+  ]
+}
