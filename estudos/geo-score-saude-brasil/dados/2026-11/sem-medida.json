@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "hapvida",
+    "operadora": "Hapvida Assistência Médica",
+    "registro_ans": "368253",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "bradesco-saude",
+    "operadora": "Bradesco Saúde S.A.",
+    "registro_ans": "005711",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "notredame-intermedica",
+    "operadora": "NotreDame Intermédica Saúde",
+    "registro_ans": "359017",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "amil",
+    "operadora": "Amil",
+    "registro_ans": "326305",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "sulamerica-saude",
+    "operadora": "SulAmérica Companhia de Seguro Saúde",
+    "registro_ans": "006246",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "unimed-nacional",
+    "operadora": "Unimed Nacional",
+    "registro_ans": "339679",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "unimed-bh",
+    "operadora": "Unimed-BH",
+    "registro_ans": "343889",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "seguros-unimed",
+    "operadora": "Seguros Unimed",
+    "registro_ans": "000701",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "porto-saude",
+    "operadora": "Porto Seguro Saúde",
+    "registro_ans": "000582",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "unimed-curitiba",
+    "operadora": "Unimed Curitiba",
+    "registro_ans": "304701",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "unimed-porto-alegre",
+    "operadora": "Unimed Porto Alegre",
+    "registro_ans": "352501",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  },
+  {
+    "slug": "prevent-senior",
+    "operadora": "Prevent Senior",
+    "registro_ans": "302147",
+    "motivo": "nao_executado",
+    "status": "sem_medida"
+  }
+]
