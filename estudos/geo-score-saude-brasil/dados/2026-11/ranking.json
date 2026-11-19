@@ -1,0 +1,11 @@
+{
+  "schema": "pandora-geo-saude-public/1",
+  "edition": "2026-11",
+  "status": "prelaunch_no_measurements",
+  "published_at": "2026-11-19",
+  "method": "10_dimensions_equal_weight_min_coverage_70",
+  "ranking": [],
+  "measured_count": 0,
+  "not_measured_count": 12,
+  "notes": "Nenhuma pontuação atribuída ou inferida; todos os sites pendentes de coleta e verificação"
+}
