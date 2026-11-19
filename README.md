@@ -108,6 +108,10 @@ navegador.
 | [`dados/2026-11/sem-medida.json`](dados/2026-11/sem-medida.json) | Bancos sem medida e o motivo |
 | [`METODOLOGIA.md`](METODOLOGIA.md) | Dimensões, verificações, regras de coleta e limites |
 
+## Outros estudos setoriais
+
+- [GEO Score Saúde Brasil — pré-lançamento, 12 operadoras, ainda sem notas](estudos/geo-score-saude-brasil/README.md). Estudo independente, com metodologia própria; pontuações dos setores não são diretamente comparáveis.
+
 ## Autoria
 
 **Raphael Sousa Pereira** é profissional, pesquisador e consultor em Generative Engine Optimization (GEO) e IA aplicada
