@@ -1,0 +1,103 @@
+{
+  "schema": "pandora-geo-saude-public-scope/1",
+  "edicao": "2026-11",
+  "status": "prelaunch",
+  "operadoras": [
+    {
+      "slug": "hapvida",
+      "operadora": "Hapvida Assistência Médica",
+      "registro_ans": "368253",
+      "site_candidato": "https://www.hapvida.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "bradesco-saude",
+      "operadora": "Bradesco Saúde S.A.",
+      "registro_ans": "005711",
+      "site_candidato": "https://www.bradescoseguros.com.br/clientes/produtos/plano-saude/empresa",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "notredame-intermedica",
+      "operadora": "NotreDame Intermédica Saúde",
+      "registro_ans": "359017",
+      "site_candidato": "https://www.gndi.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "amil",
+      "operadora": "Amil",
+      "registro_ans": "326305",
+      "site_candidato": "https://www.amil.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "sulamerica-saude",
+      "operadora": "SulAmérica Companhia de Seguro Saúde",
+      "registro_ans": "006246",
+      "site_candidato": "https://www.sulamerica.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "unimed-nacional",
+      "operadora": "Unimed Nacional",
+      "registro_ans": "339679",
+      "site_candidato": "https://unimednacional.coop.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "unimed-bh",
+      "operadora": "Unimed-BH",
+      "registro_ans": "343889",
+      "site_candidato": "https://www.unimedbh.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "seguros-unimed",
+      "operadora": "Seguros Unimed",
+      "registro_ans": "000701",
+      "site_candidato": "https://www.segurosunimed.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "porto-saude",
+      "operadora": "Porto Seguro Saúde",
+      "registro_ans": "000582",
+      "site_candidato": "https://www.portoseguro.com.br/sites/institucional/porto-seguro-saude/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "unimed-curitiba",
+      "operadora": "Unimed Curitiba",
+      "registro_ans": "304701",
+      "site_candidato": "https://www.unimedcuritiba.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "unimed-porto-alegre",
+      "operadora": "Unimed Porto Alegre",
+      "registro_ans": "352501",
+      "site_candidato": "https://www.unimed.coop.br/site/web/portoalegre",
+      "site_validado": false,
+      "status": "sem_medida"
+    },
+    {
+      "slug": "prevent-senior",
+      "operadora": "Prevent Senior",
+      "registro_ans": "302147",
+      "site_candidato": "https://www.preventsenior.com.br/",
+      "site_validado": false,
+      "status": "sem_medida"
+    }
+  ]
+}
